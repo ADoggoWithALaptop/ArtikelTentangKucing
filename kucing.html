@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html> 
+	<head>
+		<title>Artikel Tentang Kucing</title>
+		<style>
+		h2 {
+			color: #204969;
+			font-family: "Helvetica", sans-serif;
+			font-size: 1.75em;
+		}
+		h1 {
+			color: black;
+			font: bold, 2.5em; <!--bisa juga pake font: daripada font-size, font-weight, dll-->
+			<!--font-weight: bold untuk bold dan font-style: italic untuk em-->
+		}
+		.important {
+			font-weight: bold;
+			font-style: italic;
+			font-family: serif;
+			font-size: 1.3em;
+			line-height: 0;
+		}
+		body {
+			background-color: #FFF7F7; <!--can also use rgb (???,???,???)-->
+		}
+		#judul {
+			background-color: #C0D8C0;
+		}
+		li, ul, ol {
+			line-height: 1.5em;
+		}
+		.headline {
+			background-color: #C0D8C0;
+			clear: both;
+		}
+		.tabletime {
+			border: 2px solid black;
+			border-collapse: collapse; <!--ini buat bikin biar cuman satu garis bukan dua-->
+			padding-top: 20px;
+			padding-right: 20px;
+			padding-bottom: 10px;
+			padding-left: 20px;
+			font-size: 16px;
+			text-align: center;
+			font-family: fantasy;
+		}
+		#kucingrumah {
+			text-decoration: underline;
+		}
+		.link {
+			text-decoration: none;
+		}
+		.bold {
+			font-weight: bold;
+		}
+		.paragraf {
+			line-height: 1.5;
+			font-family: fantasy;
+		}
+		#daftarisi {
+			font-family: "Times New Roman", serif;
+			font-size: 0.9em;
+			border: 2px solid black;
+			width: 35%;
+			margin-bottom: 20px;
+		}
+		.image {
+			width: 400px;
+			height: 230px;
+			border: 8px ridge #C0D8C0;
+		}
+		#tablediv {
+			width: 50em;
+			margin-left: auto;
+		}
+		#container {
+			width: 50em;
+			margin: auto;
+			border: 14px groove #C0D8C0;
+			padding: 1px 10px 2px 10px;
+			overflow: auto;<!--defaultnya visible tapi bisa gunakan hidden bisa juga overflow-y atau overflow-x untuk
+			mengatur overflow ke mana-->
+		}
+		#header a {
+			position: fixed;
+			float: right;
+			color: black;
+			text-align: center;
+			padding: 12px;
+			text-decoration: none;
+			font-size: 18px; 
+			line-height: 25px;
+			border: 3px groove #C0D8C0;
+			background-color: #FFF7F7;
+		}
+		#header #home {
+			top: 60px;
+			padding-left: 53px;
+			padding-right: 53px;
+		}
+		#gambarkucing {
+			width: 200px;
+			border: 1px solid silver;
+			padding: 3px;
+			font-family: fantasy, helvetica, serif;
+			font-size: 0.75em;
+			float: right;
+			z-index: 1;
+			text-align: left;
+			margin-left: 10px;
+		}
+		#gambarkucing img {
+			width: 200px;
+			display: block; <!--margin only works on block elements but this method is a bit hacky-->
+			margin: auto;
+		}
+		#gambarkucing h3 {
+			text-align: center;
+			lineheight: 1.2em;
+			height: 20px;
+			margin-top: 3px;
+			margin-bottom: 4px;
+			background-color: #C0D8C0;
+		}
+		<!--color pallete 204969(navy blue ish),DADADA(grey ish),FFF7F7(kinda white),
+		08FFC8(bold green),062C30,C0D8C0(mint green),E8F1F5(very light blue)
+		color pallete 2 06113C,FF8C32,DDDDDD,EEEEEE*-->
+		</style>
+	</head>
+	<body>
+	<div id="header">
+	<a href="">Kembali Ke Atas</a>
+	<a id="home" href="">Home</a><!--nanti bikin website rumah-->
+	</div>
+	<div id="container">
+	<h1 id="judul">Artikel Tentang Kucing</h1>
+	
+	<h2 class="headline">Daftar Isi</h2>
+	<div id="daftarisi">
+	<ol>
+		<li><a href="#penjelasan">Penjelasan</a></li>
+		<li><a href="#sejarah">Sejarah Kucing</a></li>
+		<li><a href="#taksonomi">Taksonomi</a></li>
+		<li><a href="#pola">Macam Macam Pola Bulu Kucing</a></li>
+		<ul class="byebyedot">
+			<li>4.1 Pendek</li>
+			<li>4.2 Panjang</li>
+			<li>4.3 Oriental</li>
+		</ul>
+		<li><a href="#warna">Macam Macam Warna Bulu Kucing</a></li>
+		<ul class="byebyedot">
+			<li>5.1 Putih</li>
+			<li>5.2 Oren</li>
+			<li>5.3 Hitam</li>
+			<li>5.4 Belang-belang</li>
+		</ul>
+		<li><a href="#ras">Macam Macam Ras Kucing</a></li>
+		<ul class="byebyedot">
+			<li>6.1 Ocicat</li>
+			<li>6.2 Manx</li>
+			<li>6.3 Maine Coon</li>
+			<li>6.4 British Shorthair</li>
+			<li>6.5 Burmese</li>
+			<li>6.6 Chinchilla Longhair</li>
+		</ul>
+		<li><a href="#artikellain">Lihat Artikel Lain</a></li>
+	</ol>
+	</div>
+	
+	<h2 id="penjelasan" class="headline">Penjelasan</h2>
+	
+	<div id="gambarkucing">
+		<h3 class="h3gambarkucing">Kucing</h5>
+		<h3 class="h3gambarkucing">Felis Catus</h5>
+		<img id="belang" src="https://d1bpj0tv6vfxyp.cloudfront.net/articles/253564_20-5-2021_13-2-0.jpeg" alt="gambar kucing">
+		<div id="gambarkucingdata">
+		<table>
+			<tr>
+				<th>Waktu Kehamilan</th>
+				<td>64 Hari</td>
+			</tr>
+			<tr>
+				<th>Harapan Hidup</th>
+				<td>20 Tahun</td>
+			</tr>
+			<tr>
+				<th>Sinonim</th>
+				<td>Felis Silvestris</td>
+			</tr>
+		</table>
+		</div>
+	</div>
+	
+	
+	<p class="paragraf" class="fantasyfont"><span class="important">Kucing rumah</span> adalah sejenis mamalia karnivora dari keluarga Felidae.
+	Kata "kucing" biasanya merujuk kepada "kucing" yang telah <span class="important">dijinakkan</span>,
+	tetapi bisa juga merujuk kepada "kucing besar" seperti singa dan harimau.<br><br>
+
+	Saat ini, kucing adalah salah satu hewan peliharaan <span class="important">terpopuler</span> di dunia. Kucing yang garis keturunannya tercatat
+	secara resmi sebagai kucing trah atau galur murni (pure breed), seperti persia, siam, manx, dan sphinx.
+	Kucing seperti ini biasanya dibiakkan di tempat pemeliharaan hewan resmi. Jumlah kucing ras hanyalah <span class="important">1%</span>
+	dari seluruh kucing di dunia sisanya adalah kucing dengan keturunan campuran seperti kucing liar atau kucing kampung.
+	</p>
+	
+	<h2 id="sejarah" class="headline">Sejarah Kucing</h2>
+	
+	<p class="paragraf" class="fantasyfont">	Kucing telah berbaur dengan kehidupan manusia paling tidak sejak <span class="important">6.000 tahun SM</span>, dengan ditemukannya 
+	kerangka kucing di Pulau Siprus. Sejak zaman <span class="important">3.500 SM</span>, orang Mesir Kuno telah
+	menggunakan kucing untuk menjauhkan tikus atau hewan pengerat lain dari lumbung yang menyimpan hasil panen.</p>
+	
+	<h2 id="taksonomi" class="headline">Taksonomi</h2>
+	
+	<div id="tablediv">
+	<table class="tabletime">
+		<thead class="tabletime">
+			<tr class="tabletime">
+				<th class="tabletime">Kerajaan</th>
+				<th class="tabletime">Filum</th>
+				<th class="tabletime">Kelas</th>
+				<th class="tabletime">Ordo</th>
+				<th class="tabletime">Famili</th>
+				<th class="tabletime">Genus</th>
+				<th class="tabletime">Spesies</th>
+			</tr class="tabletime">
+		</thead class="tabletime">
+		<tbody class="tabletime">
+			<tr class="tabletime">
+				<td class="tabletime">Animalia</td>
+				<td class="tabletime">Chordata</td>
+				<td class="tabletime">Mammalia</td>
+				<td class="tabletime">Carnivora</td>
+				<td class="tabletime">Felidae</td>
+				<td class="tabletime">Felis</td>
+				<td class="tabletime">Felis Catus</td>
+			</tr class="tabletime">
+	</table>
+	</div>
+	
+	<h2 id="pola" class="headline">Macam-Macam Pola Bulu Kucing</h2>
+	
+	<ul class="fantasyfont">
+		<li><a class="link" target="_blank" href="https://id.wikipedia.org/wiki/Kucing_domestik_berbulu_pendek">Pendek</a></li>
+		<li><a class="link" target="_blank" href="https://id.wikipedia.org/wiki/Kucing_domestik_berbulu_panjang">Panjang</a></li>
+		<li><a class="link" target="_blank" href="https://id.wikipedia.org/wiki/Kucing_oriental">Oriental</a></li>
+	</ul>
+	
+	<h2 id="warna" class="headline">Macam-Macam Warna Bulu Kucing</h2>
+	
+	<ol class="fantasyfont">
+		<li>Putih</li>
+		<li>Oren</li>
+		<li>Hitam</li>
+		<li>Belang-belang</li>
+	</ol>
+	
+	<h2 id="ras" class="headline">Macam-Macam Ras Kucing</h2>
+	<ol class="fantasyfont">
+		<li><a class="link" target="_blank" href="https://id.wikipedia.org/wiki/Ocicat">Ocicat</a></li>
+		<li><a class="link" target="_blank" href="https://id.wikipedia.org/wiki/Kucing_manx">Manx</a></li>
+		<li><a class="link" target="_blank" href="https://id.wikipedia.org/wiki/Maine_Coon">Maine Coon</a></li>
+		<li><a class="link" target="_blank" href="https://id.wikipedia.org/wiki/British_Shorthair">British Shorthair</a></li>
+		<li><a class="link" target="_blank" href="https://id.wikipedia.org/wiki/Burmese_(kucing)">Burmese</a></li>
+		<li><a class="link" target="_blank" href="https://id.wikipedia.org/wiki/Kucing_persia">Chinchilla Longhair</a></li>
+	</ol>
+	<br>
+	<a href="https://id.wikipedia.org/wiki/Kucing">Read more on wikipedia |</a><a href="#judul"> Kucing</a>
+	
+	<h2 id="artikellain" class="headline">Lihat Artikel Lain</h2>
+	<br>	
+	<a href="file:///C:/Users/MyPC/Documents/Summer%20Projects/Why%20you%20should%20go%20to%20indonesia.html">
+	<h2 class="headline">Why You Should Go To Indonesia</h2>
+	<img class="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Indonesia_provinces_blank_map.svg/800px-Indonesia_provinces_blank_map.svg.png" ></a>
+	<a href="file:///C:/Users/MyPC/Documents/Summer%20Projects/Grandma's%20Recipies.html">
+	<h2 class="headline">Grandma's Recipes</h2>
+	<img class="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Western_Sushi.jpg/220px-Western_Sushi.jpg"></a>
+	<a href="file:///C:/Users/MyPC/Documents/Summer%20Projects/Aster's%20Blog.html">
+	<h2 class="headline">Aster's Blog</h2>
+	<img class="image" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Hiking_to_the_Ice_Lakes._San_Juan_National_Forest%2C_Colorado.jpg/1200px-Hiking_to_the_Ice_Lakes._San_Juan_National_Forest%2C_Colorado.jpg"></a>
+	</div>
+	</body>
+</html>
