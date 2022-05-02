@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html> 
 	<head>
+		<link rel="shortcut icon" href="cat.ico"/>
 		<title>Artikel Tentang Kucing</title>
 		<style>
 		h2 {
 			color: #204969;
-			font-family: "Helvetica", sans-serif;
+			font-family: 'Helvetica', sans-serif;
 			font-size: 1.75em;
 		}
 		h1 {
 			color: black;
-			font: bold, 2.5em; <!--bisa juga pake font: daripada font-size, font-weight, dll-->
-			<!--font-weight: bold untuk bold dan font-style: italic untuk em-->
+			font-weight: bold;
+		/*bisa juga pake font: daripada font-size, font-weight, dll
+		font-weight: bold untuk bold dan font-style: italic untuk em*/
+			font-family: sans-serif;
+			font-size: 2.75em;
 		}
 		.important {
 			font-weight: bold;
@@ -20,8 +24,8 @@
 			font-size: 1.3em;
 			line-height: 0;
 		}
-		body {
-			background-color: #FFF7F7; <!--can also use rgb (???,???,???)-->
+		body { /*can also use rgb (???,???,???)*/
+			background-color: #E9EFC0;
 		}
 		#judul {
 			background-color: #C0D8C0;
@@ -76,33 +80,36 @@
 		#container {
 			width: 50em;
 			margin: auto;
+			margin-bottom: 50px;
 			border: 14px groove #C0D8C0;
-			padding: 1px 10px 2px 10px;
+			padding: 1px 20px 2px 20px;
+			background-color: white;
 			overflow: auto;<!--defaultnya visible tapi bisa gunakan hidden bisa juga overflow-y atau overflow-x untuk
 			mengatur overflow ke mana-->
 		}
 		#header a {
 			position: fixed;
-			float: right;
+			font-family: 'Georgia', serif;
+			top: 0px;
+			left: 0px;
 			color: black;
 			text-align: center;
-			padding: 12px;
+			padding: 9px;
 			text-decoration: none;
 			font-size: 18px; 
 			line-height: 25px;
-			border: 3px groove #C0D8C0;
-			background-color: #FFF7F7;
+			width: 150px;
+			border: 3px groove #648764;
+			background-color: #C0D8C0;
 		}
 		#header #home {
-			top: 60px;
-			padding-left: 53px;
-			padding-right: 53px;
+			left: 170px;
 		}
 		#gambarkucing {
 			width: 200px;
 			border: 1px solid silver;
 			padding: 3px;
-			font-family: fantasy, helvetica, serif;
+			font-family: 'Times New Roman', serif;
 			font-size: 0.75em;
 			float: right;
 			z-index: 1;
@@ -122,18 +129,26 @@
 			margin-bottom: 4px;
 			background-color: #C0D8C0;
 		}
-		#bottom {
+		#source {
 			margin-bottom: 10px;
-			}
+		}
 		<!--color pallete 204969(navy blue ish),DADADA(grey ish),FFF7F7(kinda white),
-		08FFC8(bold green),062C30,C0D8C0(mint green),E8F1F5(very light blue)
+		08FFC8(bold green),062C30(dark navy blue ig),C0D8C0(mint green),E8F1F5(very light blue), 
+		#2d382d(forest green),#648764(well kinda green ig)
+		
 		color pallete 2 06113C,FF8C32,DDDDDD,EEEEEE*-->
 		</style>
 	</head>
 	<body>
 	<div id="header">
-	<a href="">Kembali Ke Atas</a>
-	<a id="home" href="">Home</a><!--nanti bikin website rumah-->
+	<table>
+		<tbody>
+		<tr>
+		<td><a href="">Home</a></td><!--nanti bikin website rumah-->
+		<td><a id="home" href="">Kembali Ke Atas</a></td>
+		<tbody>
+		</tr>
+	</table>
 	</div>
 	<div id="container">
 	<h1 id="judul">Artikel Tentang Kucing</h1>
@@ -264,8 +279,9 @@
 		<li><a class="link" target="_blank" href="https://id.wikipedia.org/wiki/Burmese_(kucing)">Burmese</a></li>
 		<li><a class="link" target="_blank" href="https://id.wikipedia.org/wiki/Kucing_persia">Chinchilla Longhair</a></li>
 	</ol>
-	<br>
-	<a id="bottom" href="https://id.wikipedia.org/wiki/Kucing">Read more on wikipedia |</a><a href="#judul"> Kucing</a>
+	<p id="source">
+	<a href="https://id.wikipedia.org/wiki/Kucing">Read more on wikipedia |</a><a href="#judul"> Kucing</a>
+	</p>
 	</div>
 	</body>
 </html>
