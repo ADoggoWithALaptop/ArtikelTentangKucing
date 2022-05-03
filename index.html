@@ -1,26 +1,49 @@
 <!DOCTYPE html>
 <html> 
 	<head>
-		<link rel="shortcut icon" href="cat.ico"/>
+		<link rel="shortcut icon" href="https://lh3.googleusercontent.com/
+		QPJ5TN8Vomqt0CaAtcbxulv3qMAypmd0hQtnYV3SRdBz4-OeW1mxPAuiX6dyCvB0eNK
+		HKMLpqHbNQCVbMomlJfQgZ9X8z4Yr1dofkS4J9H21T86_XaFbQ_jnuJfZX_w1IKFe0To
+		5YKNRbaQYg4zGd2ZfdpkOtQ-jUELkLDv7WozkoDJa--QFF4VSdBywEfMFch0plDW4Je
+		zGs00Q8nh1eSJuTjbvn5fhk7hX86KW1oLnSKxkaXdcPrHsgAyES6xGG6sX7P5PnEMIfQ
+		LkEPziyjUaDq0ABjYbNbjhlTgWcPiVPMv6LKb_mEXrZ59pfnm60Kc9X5SPLBfkjF3ALMK
+		U0iN2rlmPKASVVYDaxjwufSYjliqe1x__JVz3cgYf-mW7PMLePBuNBmxziUHSq62m6VV7
+		F-xfyJzl5-QCDrrXJy5HezYpEtI1OtKJYDKWkMo6WaENlwFfHTlY-90u6cdWHIcj52XAa8
+		HXg7Iw_J8jW35YLOmUZmMKnT7lwN054CQzHgd3JLqafgSSW3Z7s3vgPv2IBFrXc1EvNoX
+		FPXER0dXQLS8Mk_mgdLpY82uvMno-OyKfSe45Eh8c8yNIKLVycaQ2fhR27rB7nM5z4RtXT
+		vOmqnX6P8U00NyBqIUXlm_HbE43DD8MzXCG7Vim-vSuHdf3PWUwtoBWZlPTiLbjUhJIKcT
+		qk1tiUVVkQyZaXeWVNZ8_RyW_aItrKjFgWXexotoCkSg7VetCqpwWssLmGTMFfRLCmwF6W
+		B7X-4G5lm6wNSBbFb4t4rfACc4UasqDmeN7kVEFf29P6npiwUXDHnL5QIo6r91CSEeunP
+		WlfCRUjKk=s804-no?authuser=2"/> <!--holy shit google photos works-->
 		<title>Artikel Tentang Kucing</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">  <!--google fonts da goat (font is 'Lato')-->
 		<style>
 		h2 {
 			color: #204969;
 			font-family: 'Helvetica', sans-serif;
 			font-size: 1.75em;
 		}
+		@font-face {
+			font-family: Butler;
+			src: url("Butler_Regular.otf");
+		}
 		h1 {
 			color: black;
 			font-weight: bold;
 		/*bisa juga pake font: daripada font-size, font-weight, dll
 		font-weight: bold untuk bold dan font-style: italic untuk em*/
-			font-family: sans-serif;
+			font-family: Butler, sans-serif;
 			font-size: 2.75em;
+		}
+		h1, h2 {
+			padding-left: 5px;
 		}
 		.important {
 			font-weight: bold;
 			font-style: italic;
-			font-family: serif;
+			font-family: 'lserif;
 			font-size: 1.3em;
 			line-height: 0;
 		}
@@ -39,14 +62,19 @@
 		}
 		.tabletime {
 			border: 2px solid black;
-			border-collapse: collapse; <!--ini buat bikin biar cuman satu garis bukan dua-->
-			padding-top: 20px;
-			padding-right: 20px;
-			padding-bottom: 10px;
-			padding-left: 20px;
+			border-collapse: collapse; /* ini buat bikin dua garis kegabung */
+			padding: 9px;
 			font-size: 16px;
 			text-align: center;
-			font-family: fantasy;
+			font-family: 'Lato', fantasy;
+		}
+		.tabletime table {
+			table-layout: fixed;
+			width: 100%;
+		}
+		.tabletime td {
+			width: 14.285%; /* so basically 100 divided by 7 = 14.285 and this is to make the
+							tds have equal width */
 		}
 		#kucingrumah {
 			text-decoration: underline;
@@ -84,8 +112,8 @@
 			border: 14px groove #C0D8C0;
 			padding: 1px 20px 2px 20px;
 			background-color: white;
-			overflow: auto;<!--defaultnya visible tapi bisa gunakan hidden bisa juga overflow-y atau overflow-x untuk
-			mengatur overflow ke mana-->
+			overflow: auto; /*defaultnya visible tapi bisa gunakan hidden bisa juga overflow-y atau overflow-x untuk
+			mengatur overflow ke mana*/
 		}
 		#header a {
 			position: fixed;
@@ -109,7 +137,7 @@
 			width: 200px;
 			border: 1px solid silver;
 			padding: 3px;
-			font-family: 'Times New Roman', serif;
+			font-family: serif;
 			font-size: 0.75em;
 			float: right;
 			z-index: 1;
@@ -118,7 +146,7 @@
 		}
 		#gambarkucing img {
 			width: 200px;
-			display: block; <!--margin only works on block elements but this method is a bit hacky-->
+			display: block; /*margin only works on block elements but this method is a bit hacky*/
 			margin: auto;
 		}
 		#gambarkucing h3 {
@@ -131,6 +159,9 @@
 		}
 		#source {
 			margin-bottom: 10px;
+		}
+		.byebyedot {
+			list-style-type: none;
 		}
 		<!--color pallete 204969(navy blue ish),DADADA(grey ish),FFF7F7(kinda white),
 		08FFC8(bold green),062C30(dark navy blue ig),C0D8C0(mint green),E8F1F5(very light blue), 
